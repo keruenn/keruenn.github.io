@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My Website</title>
+    <title>Tags on keruen&#39;s Security Blog</title>
     <link>https://keruenn.github.io/tags/</link>
-    <description>Recent content in Tags on My Website</description>
+    <description>Recent content in Tags on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jan 2024 20:55:34 +0600</lastBuildDate>
     <atom:link href="https://keruenn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ctf</title>
+      <link>https://keruenn.github.io/tags/ctf/</link>
+      <pubDate>Sat, 06 Jan 2024 20:55:34 +0600</pubDate>
+      <guid>https://keruenn.github.io/tags/ctf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>hackthebox</title>
+      <link>https://keruenn.github.io/tags/hackthebox/</link>
+      <pubDate>Sat, 06 Jan 2024 20:55:34 +0600</pubDate>
+      <guid>https://keruenn.github.io/tags/hackthebox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>htb-sau</title>
+      <link>https://keruenn.github.io/tags/htb-sau/</link>
+      <pubDate>Sat, 06 Jan 2024 20:55:34 +0600</pubDate>
+      <guid>https://keruenn.github.io/tags/htb-sau/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

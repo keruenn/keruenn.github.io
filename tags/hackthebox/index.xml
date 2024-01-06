@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>keruen&#39;s Security Blog</title>
-    <link>https://keruenn.github.io/</link>
-    <description>Recent content on keruen&#39;s Security Blog</description>
+    <title>hackthebox on keruen&#39;s Security Blog</title>
+    <link>https://keruenn.github.io/tags/hackthebox/</link>
+    <description>Recent content in hackthebox on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jan 2024 20:55:34 +0600</lastBuildDate>
-    <atom:link href="https://keruenn.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://keruenn.github.io/about/</link>
-      <pubDate>Sat, 06 Jan 2024 21:24:23 +0600</pubDate>
-      <guid>https://keruenn.github.io/about/</guid>
-      <description>Research portfolio: Empty</description>
-    </item>
+    <atom:link href="https://keruenn.github.io/tags/hackthebox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HackTheBox: Sau</title>
       <link>https://keruenn.github.io/posts/sau/</link>

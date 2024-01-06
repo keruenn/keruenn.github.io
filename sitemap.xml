@@ -2,17 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://keruenn.github.io/</loc>
+    <loc>https://keruenn.github.io/about/</loc>
+    <lastmod>2024-01-06T21:24:23+06:00</lastmod>
+  </url><url>
+    <loc>https://keruenn.github.io/tags/ctf/</loc>
     <lastmod>2024-01-06T20:55:34+06:00</lastmod>
   </url><url>
-    <loc>https://keruenn.github.io/posts/mypost/</loc>
+    <loc>https://keruenn.github.io/tags/hackthebox/</loc>
+    <lastmod>2024-01-06T20:55:34+06:00</lastmod>
+  </url><url>
+    <loc>https://keruenn.github.io/posts/sau/</loc>
+    <lastmod>2024-01-06T20:55:34+06:00</lastmod>
+  </url><url>
+    <loc>https://keruenn.github.io/tags/htb-sau/</loc>
+    <lastmod>2024-01-06T20:55:34+06:00</lastmod>
+  </url><url>
+    <loc>https://keruenn.github.io/</loc>
     <lastmod>2024-01-06T20:55:34+06:00</lastmod>
   </url><url>
     <loc>https://keruenn.github.io/posts/</loc>
     <lastmod>2024-01-06T20:55:34+06:00</lastmod>
   </url><url>
-    <loc>https://keruenn.github.io/categories/</loc>
-  </url><url>
     <loc>https://keruenn.github.io/tags/</loc>
+    <lastmod>2024-01-06T20:55:34+06:00</lastmod>
+  </url><url>
+    <loc>https://keruenn.github.io/categories/</loc>
   </url>
 </urlset>
