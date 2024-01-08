@@ -6,8 +6,29 @@
     <description>Recent content in Posts on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jan 2024 22:10:36 +0600</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jan 2024 14:02:27 +0600</lastBuildDate>
     <atom:link href="https://keruenn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[IRIS CTF 2024] Mokersee</title>
+      <link>https://keruenn.github.io/posts/irisctf_2024_mokersee/</link>
+      <pubDate>Mon, 08 Jan 2024 14:02:27 +0600</pubDate>
+      <guid>https://keruenn.github.io/posts/irisctf_2024_mokersee/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>[IRIS CTF 2024] What&#39;s My Password</title>
+      <link>https://keruenn.github.io/posts/irisctf_2024_whats_my_password/</link>
+      <pubDate>Mon, 08 Jan 2024 14:02:07 +0600</pubDate>
+      <guid>https://keruenn.github.io/posts/irisctf_2024_whats_my_password/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>[IRIS CTF 2024] Lamenote</title>
+      <link>https://keruenn.github.io/posts/irisctf_2024_lamenote/</link>
+      <pubDate>Mon, 08 Jan 2024 13:43:30 +0600</pubDate>
+      <guid>https://keruenn.github.io/posts/irisctf_2024_lamenote/</guid>
+      <description></description>
+    </item>
     <item>
       <title>HackTheBox: Steamcloud</title>
       <link>https://keruenn.github.io/posts/steamcloud/</link>
