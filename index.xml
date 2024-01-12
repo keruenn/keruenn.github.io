@@ -6,11 +6,6 @@
     <description>Recent content on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-<<<<<<< HEAD
-    <lastBuildDate>Sun, 07 Jan 2024 22:10:36 +0600</lastBuildDate>
-    <atom:link href="https://keruenn.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-=======
     <lastBuildDate>Mon, 08 Jan 2024 14:02:27 +0600</lastBuildDate>
     <atom:link href="https://keruenn.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -35,7 +30,6 @@
       <description></description>
     </item>
     <item>
->>>>>>> 5011a84ba520f96da4f462e20474e58cda158753
       <title>HackTheBox: Steamcloud</title>
       <link>https://keruenn.github.io/posts/steamcloud/</link>
       <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
