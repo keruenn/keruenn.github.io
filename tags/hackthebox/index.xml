@@ -9,6 +9,13 @@
     <lastBuildDate>Sun, 07 Jan 2024 22:10:36 +0600</lastBuildDate>
     <atom:link href="https://keruenn.github.io/tags/hackthebox/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>HackTheBox: Fuse</title>
+      <link>https://keruenn.github.io/posts/fuse/</link>
+      <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
+      <guid>https://keruenn.github.io/posts/fuse/</guid>
+      <description>Content Recon nmap output&#xA;53/tcp open domain syn-ack ttl 127 Simple DNS Plus 80/tcp open http syn-ack ttl 127 Microsoft IIS httpd 10.0 |_http-server-header: Microsoft-IIS/10.0 | http-methods: | Supported Methods: OPTIONS TRACE GET HEAD POST |_ Potentially risky methods: TRACE |_http-title: Site doesn&amp;#39;t have a title (text/html). 88/tcp open kerberos-sec syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2024-01-20 14:45:05Z) 135/tcp open msrpc syn-ack ttl 127 Microsoft Windows RPC 139/tcp open netbios-ssn syn-ack ttl 127 Microsoft Windows netbios-ssn 389/tcp open ldap syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: fabricorp.</description>
+    </item>
+    <item>
       <title>HackTheBox: Steamcloud</title>
       <link>https://keruenn.github.io/posts/steamcloud/</link>
       <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>HackTheBox: Fuse - keruen&#39;s Security Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Content Recon nmap output
+53/tcp open domain syn-ack ttl 127 Simple DNS Plus 80/tcp open http syn-ack ttl 127 Microsoft IIS httpd 10.0 |_http-server-header: Microsoft-IIS/10.0 | http-methods: | Supported Methods: OPTIONS TRACE GET HEAD POST |_ Potentially risky methods: TRACE |_http-title: Site doesn&#39;t have a title (text/html). 88/tcp open kerberos-sec syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2024-01-20 14:45:05Z) 135/tcp open msrpc syn-ack ttl 127 Microsoft Windows RPC 139/tcp open netbios-ssn syn-ack ttl 127 Microsoft Windows netbios-ssn 389/tcp open ldap syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: fabricorp." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="HackTheBox: Fuse" />
+<meta property="og:description" content="Content Recon nmap output
+53/tcp open domain syn-ack ttl 127 Simple DNS Plus 80/tcp open http syn-ack ttl 127 Microsoft IIS httpd 10.0 |_http-server-header: Microsoft-IIS/10.0 | http-methods: | Supported Methods: OPTIONS TRACE GET HEAD POST |_ Potentially risky methods: TRACE |_http-title: Site doesn&#39;t have a title (text/html). 88/tcp open kerberos-sec syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2024-01-20 14:45:05Z) 135/tcp open msrpc syn-ack ttl 127 Microsoft Windows RPC 139/tcp open netbios-ssn syn-ack ttl 127 Microsoft Windows netbios-ssn 389/tcp open ldap syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: fabricorp." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://keruenn.github.io/posts/fuse/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-07T22:10:36+06:00" />
+<meta property="article:modified_time" content="2024-01-07T22:10:36+06:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="HackTheBox: Fuse"/>
+<meta name="twitter:description" content="Content Recon nmap output
+53/tcp open domain syn-ack ttl 127 Simple DNS Plus 80/tcp open http syn-ack ttl 127 Microsoft IIS httpd 10.0 |_http-server-header: Microsoft-IIS/10.0 | http-methods: | Supported Methods: OPTIONS TRACE GET HEAD POST |_ Potentially risky methods: TRACE |_http-title: Site doesn&#39;t have a title (text/html). 88/tcp open kerberos-sec syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2024-01-20 14:45:05Z) 135/tcp open msrpc syn-ack ttl 127 Microsoft Windows RPC 139/tcp open netbios-ssn syn-ack ttl 127 Microsoft Windows netbios-ssn 389/tcp open ldap syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: fabricorp."/>
+<script src="https://keruenn.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://keruenn.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://keruenn.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://keruenn.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"  disabled />
+	
+
+	
+	
+
+	
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://keruenn.github.io/">keruen&#39;s Security Blog</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/tags">Tags</a>
+		
+		<a href="/about">About</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
+		<script src="https://keruenn.github.io/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">HackTheBox: Fuse</h1>
+			<div class="meta">Posted on Jan 7, 2024</div>
+		</div>
+		
+
+		<section class="body">
+			<h1 id="content">Content</h1>
+<h2 id="recon">Recon</h2>
+<p><code>nmap</code> output</p>
+<pre tabindex="0"><code>53/tcp    open  domain       syn-ack ttl 127 Simple DNS Plus
+80/tcp    open  http         syn-ack ttl 127 Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn&#39;t have a title (text/html).
+88/tcp    open  kerberos-sec syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2024-01-20 14:45:05Z)
+135/tcp   open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn  syn-ack ttl 127 Microsoft Windows netbios-ssn
+389/tcp   open  ldap         syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: fabricorp.local, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds syn-ack ttl 127 Windows Server 2016 Standard 14393 microsoft-ds (workgroup: FABRICORP)
+464/tcp   open  kpasswd5?    syn-ack ttl 127
+593/tcp   open  ncacn_http   syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped   syn-ack ttl 127
+3268/tcp  open  ldap         syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: fabricorp.local, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped   syn-ack ttl 127
+5985/tcp  open  http         syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp  open  mc-nmf       syn-ack ttl 127 .NET Message Framing
+49666/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+49667/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+49675/tcp open  ncacn_http   syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+49676/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+49680/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+49698/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+</code></pre><p><img src="image.png" alt="Alt text"></p>
+<p>┌──(kali㉿kali)-[~/fuse]
+└─$ searchsploit papercut</p>
+<hr>
+<p>Exploit Title                                                                    |  Path</p>
+<hr>
+<p>PaperCut NG/MG 22.0.4 - Authentication Bypass                                     | multiple/webapps/51391.py
+PaperCut NG/MG 22.0.4 - Remote Code Execution (RCE)                               | multiple/webapps/51452.py</p>
+<hr>
+<p>Shellcodes: No Results</p>
+<p>Both exploits does not seem working.</p>
+<p>found users</p>
+<pre tabindex="0"><code>pmerton
+tlavel
+sthompson
+bhult
+administrator
+bnielson
+</code></pre><p><img src="image-1.png" alt="Alt text"></p>
+<p><img src="image-2.png" alt="Alt text"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Powershell" data-lang="Powershell"><span style="display:flex;"><span>$username = <span style="color:#e6db74">&#39;bnielson&#39;</span>
+</span></span><span style="display:flex;"><span>$dc = <span style="color:#e6db74">&#39;fuse.fabricorp.local&#39;</span>
+</span></span><span style="display:flex;"><span>$old = <span style="color:#e6db74">&#39;Fabricorp01&#39;</span>
+</span></span><span style="display:flex;"><span>$new = <span style="color:#e6db74">&#39;S0meVeryLongPa5s!&#39;</span>
+</span></span><span style="display:flex;"><span>$code = <span style="color:#e6db74">@&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">[DllImport(&#34;netapi32.dll&#34;, CharSet = CharSet.Unicode)]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">public static extern bool NetUserChangePassword(string domain, string username,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">string oldpassword, string newpassword);
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;@</span>
+</span></span><span style="display:flex;"><span>$NetApi32 = Add-Type -MemberDefinition $code -Name <span style="color:#e6db74">&#39;NetApi32&#39;</span> -Namespace <span style="color:#e6db74">&#39;Win32&#39;</span>
+</span></span><span style="display:flex;"><span>-PassThru
+</span></span><span style="display:flex;"><span>$NetApi32::NetUserChangePassword($dc, $username, $old, $new)
+</span></span></code></pre></div><p>reset password -&gt; get printer information -&gt; enum domain users (windapsearch) -&gt; password spraying -&gt; enum group membership  -&gt; get into the box -&gt; whoami /priv -&gt; abuse SetLoadDriver</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/hackthebox">hackthebox</a></li>
+					
+					<li><a href="/tags/ctf">ctf</a></li>
+					
+					<li><a href="/tags/htb-fuse">htb-fuse</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2024  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+</div>
+    </body>
+</html>
