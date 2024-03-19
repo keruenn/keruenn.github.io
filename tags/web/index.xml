@@ -6,8 +6,15 @@
     <description>Recent content in web on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Mar 2024 11:43:36 +0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Mar 2024 14:44:44 +0500</lastBuildDate>
     <atom:link href="https://keruenn.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[HackTheBox CTF 2024] KORP Terminal</title>
+      <link>https://keruenn.github.io/posts/htbctf_2024_korp_terminal/</link>
+      <pubDate>Tue, 19 Mar 2024 14:44:44 +0500</pubDate>
+      <guid>https://keruenn.github.io/posts/htbctf_2024_korp_terminal/</guid>
+      <description></description>
+    </item>
     <item>
       <title>[HackTheBox CTF 2024] Flag Command</title>
       <link>https://keruenn.github.io/posts/htbctf_2024_flag_command/</link>

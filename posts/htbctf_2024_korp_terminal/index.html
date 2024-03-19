@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>[HackTheBox CTF 2024] KORP Terminal - keruen&#39;s Security Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="[HackTheBox CTF 2024] KORP Terminal" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://keruenn.github.io/posts/htbctf_2024_korp_terminal/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-19T14:44:44+05:00" />
+<meta property="article:modified_time" content="2024-03-19T14:44:44+05:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="[HackTheBox CTF 2024] KORP Terminal"/>
+<meta name="twitter:description" content=""/>
+<script src="https://keruenn.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://keruenn.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://keruenn.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://keruenn.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"  disabled />
+	
+
+	
+	
+
+	
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://keruenn.github.io/">keruen&#39;s Security Blog</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/tags">Tags</a>
+		
+		<a href="/about">About</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
+		<script src="https://keruenn.github.io/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">[HackTheBox CTF 2024] KORP Terminal</h1>
+			<div class="meta">Posted on Mar 19, 2024</div>
+		</div>
+		
+
+		<section class="body">
+			<h2 id="description">Description</h2>
+<p>Your faction must infiltrate the KORP™ terminal and gain access to the Legionaries&rsquo; privileged information and find out more about the organizers of the Fray. The terminal login screen is protected by state-of-the-art encryption and security protocols.</p>
+<h2 id="writeup">Writeup</h2>
+<p>Visiting the home page we are provided with the following page:</p>
+<p><img src="image.png" alt="alt text"></p>
+<p>Upon reviewing source code, we find function <code>check_user</code> that checks provided credentials</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_user</span>(self, username, password):
+</span></span><span style="display:flex;"><span>		user <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>query(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;SELECT password FROM users WHERE username = &#39;</span><span style="color:#e6db74">{</span>username<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;&#34;</span>, one<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> user:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		password_bytes <span style="color:#f92672">=</span> password<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)
+</span></span><span style="display:flex;"><span>		password_encoded <span style="color:#f92672">=</span> user[<span style="color:#e6db74">&#34;password&#34;</span>]<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)
+</span></span><span style="display:flex;"><span>		matched <span style="color:#f92672">=</span> bcrypt<span style="color:#f92672">.</span>checkpw(password_bytes, password_encoded)
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> matched:
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span></code></pre></div><p>Query seems prone to SQL Injection vulnerability</p>
+<p><img src="image-1.png" alt="alt text"></p>
+<p>We can use <code>sqlmap</code> to enumerate the database and dump it</p>
+<pre tabindex="0"><code>sqlmap -r login_request --ignore-code 401 -T users --dump
+</code></pre><p><img src="image-2.png" alt="alt text"></p>
+<p>We get the admin&rsquo;s password hash. Running <code>john</code> against this hash will get us the password - <code>password123</code></p>
+<p>After the login, we get the flag</p>
+<p><img src="image-3.png" alt="alt text"></p>
+<p>flag - <code>HTB{t3rm1n4l_cr4ck1ng_sh3n4nig4n5}</code></p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/hacktheboxctf_2024">hacktheboxctf_2024</a></li>
+					
+					<li><a href="/tags/web">web</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2024  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+</div>
+    </body>
+</html>
