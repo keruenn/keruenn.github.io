@@ -66,7 +66,7 @@
 <p>Your faction must infiltrate the KORP™ terminal and gain access to the Legionaries&rsquo; privileged information and find out more about the organizers of the Fray. The terminal login screen is protected by state-of-the-art encryption and security protocols.</p>
 <h2 id="writeup">Writeup</h2>
 <p>Visiting the home page we are provided with the following page:</p>
-<p><img src="image.png" alt="alt text"></p>
+<p><img src="images/image.png" alt="alt text"></p>
 <p>Upon reviewing source code, we find function <code>check_user</code> that checks provided credentials</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_user</span>(self, username, password):
 </span></span><span style="display:flex;"><span>		user <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>query(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;SELECT password FROM users WHERE username = &#39;</span><span style="color:#e6db74">{</span>username<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;&#34;</span>, one<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
@@ -83,13 +83,13 @@
 </span></span><span style="display:flex;"><span>		
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
 </span></span></code></pre></div><p>Query seems prone to SQL Injection vulnerability</p>
-<p><img src="image-1.png" alt="alt text"></p>
+<p><img src="images/image-1.png" alt="alt text"></p>
 <p>We can use <code>sqlmap</code> to enumerate the database and dump it</p>
 <pre tabindex="0"><code>sqlmap -r login_request --ignore-code 401 -T users --dump
-</code></pre><p><img src="image-2.png" alt="alt text"></p>
+</code></pre><p><img src="images/image-2.png" alt="alt text"></p>
 <p>We get the admin&rsquo;s password hash. Running <code>john</code> against this hash will get us the password - <code>password123</code></p>
 <p>After the login, we get the flag</p>
-<p><img src="image-3.png" alt="alt text"></p>
+<p><img src="images/image-3.png" alt="alt text"></p>
 <p>flag - <code>HTB{t3rm1n4l_cr4ck1ng_sh3n4nig4n5}</code></p>
 
 		</section>
