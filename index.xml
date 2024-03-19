@@ -6,8 +6,50 @@
     <description>Recent content on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jan 2024 14:02:27 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 19 Mar 2024 11:43:36 +0500</lastBuildDate>
     <atom:link href="https://keruenn.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[HackTheBox CTF 2024] Flag Command</title>
+      <link>https://keruenn.github.io/posts/hacktheboxctf_2024_flag_command/</link>
+      <pubDate>Tue, 19 Mar 2024 11:43:36 +0500</pubDate>
+      <guid>https://keruenn.github.io/posts/hacktheboxctf_2024_flag_command/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HackTheBox: Analysis</title>
+      <link>https://keruenn.github.io/posts/analysis/</link>
+      <pubDate>Thu, 14 Mar 2024 22:06:27 +0500</pubDate>
+      <guid>https://keruenn.github.io/posts/analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HackTheBox: Monitored</title>
+      <link>https://keruenn.github.io/posts/monitored/</link>
+      <pubDate>Thu, 14 Mar 2024 19:36:49 +0500</pubDate>
+      <guid>https://keruenn.github.io/posts/monitored/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HackTheBox: Jeeves</title>
+      <link>https://keruenn.github.io/posts/jeeves/</link>
+      <pubDate>Mon, 05 Feb 2024 09:17:15 +0600</pubDate>
+      <guid>https://keruenn.github.io/posts/jeeves/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HackTheBox: Undected</title>
+      <link>https://keruenn.github.io/posts/undected/</link>
+      <pubDate>Fri, 02 Feb 2024 11:12:54 +0600</pubDate>
+      <guid>https://keruenn.github.io/posts/undected/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HackTheBox: Silo</title>
+      <link>https://keruenn.github.io/posts/silo/</link>
+      <pubDate>Fri, 02 Feb 2024 10:16:14 +0600</pubDate>
+      <guid>https://keruenn.github.io/posts/silo/</guid>
+      <description></description>
+    </item>
     <item>
       <title>[IRIS CTF 2024] Mokersee</title>
       <link>https://keruenn.github.io/posts/irisctf_2024_mokersee/</link>
@@ -34,14 +76,14 @@
       <link>https://keruenn.github.io/posts/fuse/</link>
       <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
       <guid>https://keruenn.github.io/posts/fuse/</guid>
-      <description>Content Recon nmap output&#xA;53/tcp open domain syn-ack ttl 127 Simple DNS Plus 80/tcp open http syn-ack ttl 127 Microsoft IIS httpd 10.0 |_http-server-header: Microsoft-IIS/10.0 | http-methods: | Supported Methods: OPTIONS TRACE GET HEAD POST |_ Potentially risky methods: TRACE |_http-title: Site doesn&amp;#39;t have a title (text/html). 88/tcp open kerberos-sec syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2024-01-20 14:45:05Z) 135/tcp open msrpc syn-ack ttl 127 Microsoft Windows RPC 139/tcp open netbios-ssn syn-ack ttl 127 Microsoft Windows netbios-ssn 389/tcp open ldap syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: fabricorp.</description>
+      <description></description>
     </item>
     <item>
       <title>HackTheBox: Steamcloud</title>
       <link>https://keruenn.github.io/posts/steamcloud/</link>
       <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
       <guid>https://keruenn.github.io/posts/steamcloud/</guid>
-      <description>Content recon exploiting kubernetes recon nmap report&#xA;22/tcp 2379/tcp 2380/tcp 8443/tcp 10250/tcp exploiting kubernetes curl -k https://10.10.11.133:8433&#xA;{ &amp;#34;kind&amp;#34;: &amp;#34;Status&amp;#34;, &amp;#34;apiVersion&amp;#34;: &amp;#34;v1&amp;#34;, &amp;#34;metadata&amp;#34;: { }, &amp;#34;status&amp;#34;: &amp;#34;Failure&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;forbidden: User \&amp;#34;system:anonymous\&amp;#34; cannot get path \&amp;#34;/\&amp;#34;&amp;#34;, &amp;#34;reason&amp;#34;: &amp;#34;Forbidden&amp;#34;, &amp;#34;details&amp;#34;: { }, &amp;#34;code&amp;#34;: 403 } curl -k https://10.10.11.133:10250/pods</description>
+      <description></description>
     </item>
     <item>
       <title>HackTheBox: Sau</title>
@@ -55,7 +97,7 @@
       <link>https://keruenn.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://keruenn.github.io/about/</guid>
-      <description>:::::::::::::::::::::::::::::::&#xA;Research portfolio Empty&#xA;Socials github hackthebox hackerone tryhackme </description>
+      <description>:::::::::::::::::::::::::::::::&#xA;Research portfolio Empty&#xA;Certifications Empty&#xA;Socials github hackthebox hackerone tryhackme </description>
     </item>
   </channel>
 </rss>

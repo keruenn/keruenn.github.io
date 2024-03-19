@@ -6,20 +6,48 @@
     <description>Recent content in Tags on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jan 2024 22:10:36 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 19 Mar 2024 11:43:36 +0500</lastBuildDate>
     <atom:link href="https://keruenn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hacktheboxctf_2024</title>
+      <link>https://keruenn.github.io/tags/hacktheboxctf_2024/</link>
+      <pubDate>Tue, 19 Mar 2024 11:43:36 +0500</pubDate>
+      <guid>https://keruenn.github.io/tags/hacktheboxctf_2024/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>web</title>
+      <link>https://keruenn.github.io/tags/web/</link>
+      <pubDate>Tue, 19 Mar 2024 11:43:36 +0500</pubDate>
+      <guid>https://keruenn.github.io/tags/web/</guid>
+      <description></description>
+    </item>
     <item>
       <title>ctf</title>
       <link>https://keruenn.github.io/tags/ctf/</link>
-      <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
+      <pubDate>Thu, 14 Mar 2024 22:06:27 +0500</pubDate>
       <guid>https://keruenn.github.io/tags/ctf/</guid>
       <description></description>
     </item>
     <item>
       <title>hackthebox</title>
       <link>https://keruenn.github.io/tags/hackthebox/</link>
-      <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
+      <pubDate>Thu, 14 Mar 2024 22:06:27 +0500</pubDate>
       <guid>https://keruenn.github.io/tags/hackthebox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>htb-analysis</title>
+      <link>https://keruenn.github.io/tags/htb-analysis/</link>
+      <pubDate>Thu, 14 Mar 2024 22:06:27 +0500</pubDate>
+      <guid>https://keruenn.github.io/tags/htb-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>irisctf_2024</title>
+      <link>https://keruenn.github.io/tags/irisctf_2024/</link>
+      <pubDate>Mon, 08 Jan 2024 14:02:07 +0600</pubDate>
+      <guid>https://keruenn.github.io/tags/irisctf_2024/</guid>
       <description></description>
     </item>
     <item>

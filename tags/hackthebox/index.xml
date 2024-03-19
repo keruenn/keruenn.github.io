@@ -6,21 +6,28 @@
     <description>Recent content in hackthebox on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jan 2024 22:10:36 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2024 22:06:27 +0500</lastBuildDate>
     <atom:link href="https://keruenn.github.io/tags/hackthebox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HackTheBox: Analysis</title>
+      <link>https://keruenn.github.io/posts/analysis/</link>
+      <pubDate>Thu, 14 Mar 2024 22:06:27 +0500</pubDate>
+      <guid>https://keruenn.github.io/posts/analysis/</guid>
+      <description></description>
+    </item>
     <item>
       <title>HackTheBox: Fuse</title>
       <link>https://keruenn.github.io/posts/fuse/</link>
       <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
       <guid>https://keruenn.github.io/posts/fuse/</guid>
-      <description>Content Recon nmap output&#xA;53/tcp open domain syn-ack ttl 127 Simple DNS Plus 80/tcp open http syn-ack ttl 127 Microsoft IIS httpd 10.0 |_http-server-header: Microsoft-IIS/10.0 | http-methods: | Supported Methods: OPTIONS TRACE GET HEAD POST |_ Potentially risky methods: TRACE |_http-title: Site doesn&amp;#39;t have a title (text/html). 88/tcp open kerberos-sec syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2024-01-20 14:45:05Z) 135/tcp open msrpc syn-ack ttl 127 Microsoft Windows RPC 139/tcp open netbios-ssn syn-ack ttl 127 Microsoft Windows netbios-ssn 389/tcp open ldap syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: fabricorp.</description>
+      <description></description>
     </item>
     <item>
       <title>HackTheBox: Steamcloud</title>
       <link>https://keruenn.github.io/posts/steamcloud/</link>
       <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
       <guid>https://keruenn.github.io/posts/steamcloud/</guid>
-      <description>Content recon exploiting kubernetes recon nmap report&#xA;22/tcp 2379/tcp 2380/tcp 8443/tcp 10250/tcp exploiting kubernetes curl -k https://10.10.11.133:8433&#xA;{ &amp;#34;kind&amp;#34;: &amp;#34;Status&amp;#34;, &amp;#34;apiVersion&amp;#34;: &amp;#34;v1&amp;#34;, &amp;#34;metadata&amp;#34;: { }, &amp;#34;status&amp;#34;: &amp;#34;Failure&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;forbidden: User \&amp;#34;system:anonymous\&amp;#34; cannot get path \&amp;#34;/\&amp;#34;&amp;#34;, &amp;#34;reason&amp;#34;: &amp;#34;Forbidden&amp;#34;, &amp;#34;details&amp;#34;: { }, &amp;#34;code&amp;#34;: 403 } curl -k https://10.10.11.133:10250/pods</description>
+      <description></description>
     </item>
     <item>
       <title>HackTheBox: Sau</title>
