@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hacktheboxctf_2024 on keruen&#39;s Security Blog</title>
+    <title>Hacktheboxctf_2024 on keruen&#39;s Security Blog</title>
     <link>https://keruenn.github.io/tags/hacktheboxctf_2024/</link>
-    <description>Recent content in hacktheboxctf_2024 on keruen&#39;s Security Blog</description>
+    <description>Recent content in Hacktheboxctf_2024 on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Mar 2024 15:15:57 +0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Mar 2024 15:46:16 +0500</lastBuildDate>
     <atom:link href="https://keruenn.github.io/tags/hacktheboxctf_2024/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[HackTheBox CTF 2024] Labyrinth Linguist</title>
+      <link>https://keruenn.github.io/posts/htbctf_2024_labyrinth_linguist/</link>
+      <pubDate>Tue, 19 Mar 2024 15:46:16 +0500</pubDate>
+      <guid>https://keruenn.github.io/posts/htbctf_2024_labyrinth_linguist/</guid>
+      <description></description>
+    </item>
     <item>
       <title>[HackTheBox CTF 2024] TimeKORP</title>
       <link>https://keruenn.github.io/posts/htbctf_2024_time_korp/</link>
