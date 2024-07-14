@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on keruen&#39;s Security Blog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://keruenn.github.io/tags/</link>
     <description>Recent content in Tags on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 14 Jul 2024 10:20:58 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://keruenn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hackthebox</title>
-      <link>http://localhost:1313/tags/hackthebox/</link>
+      <link>https://keruenn.github.io/tags/hackthebox/</link>
       <pubDate>Sun, 14 Jul 2024 10:20:58 +0500</pubDate>
-      <guid>http://localhost:1313/tags/hackthebox/</guid>
+      <guid>https://keruenn.github.io/tags/hackthebox/</guid>
       <description></description>
     </item>
     <item>
       <title>Htb-Bucket</title>
-      <link>http://localhost:1313/tags/htb-bucket/</link>
+      <link>https://keruenn.github.io/tags/htb-bucket/</link>
       <pubDate>Sun, 14 Jul 2024 10:20:58 +0500</pubDate>
-      <guid>http://localhost:1313/tags/htb-bucket/</guid>
+      <guid>https://keruenn.github.io/tags/htb-bucket/</guid>
       <description></description>
     </item>
     <item>
       <title>S3</title>
-      <link>http://localhost:1313/tags/s3/</link>
+      <link>https://keruenn.github.io/tags/s3/</link>
       <pubDate>Sun, 14 Jul 2024 10:20:58 +0500</pubDate>
-      <guid>http://localhost:1313/tags/s3/</guid>
+      <guid>https://keruenn.github.io/tags/s3/</guid>
       <description></description>
     </item>
     <item>
       <title>Hacktheboxctf_2024</title>
-      <link>http://localhost:1313/tags/hacktheboxctf_2024/</link>
+      <link>https://keruenn.github.io/tags/hacktheboxctf_2024/</link>
       <pubDate>Tue, 19 Mar 2024 15:46:16 +0500</pubDate>
-      <guid>http://localhost:1313/tags/hacktheboxctf_2024/</guid>
+      <guid>https://keruenn.github.io/tags/hacktheboxctf_2024/</guid>
       <description></description>
     </item>
     <item>
       <title>Web</title>
-      <link>http://localhost:1313/tags/web/</link>
+      <link>https://keruenn.github.io/tags/web/</link>
       <pubDate>Tue, 19 Mar 2024 15:46:16 +0500</pubDate>
-      <guid>http://localhost:1313/tags/web/</guid>
+      <guid>https://keruenn.github.io/tags/web/</guid>
       <description></description>
     </item>
     <item>
       <title>Ctf</title>
-      <link>http://localhost:1313/tags/ctf/</link>
+      <link>https://keruenn.github.io/tags/ctf/</link>
       <pubDate>Thu, 14 Mar 2024 22:06:27 +0500</pubDate>
-      <guid>http://localhost:1313/tags/ctf/</guid>
+      <guid>https://keruenn.github.io/tags/ctf/</guid>
       <description></description>
     </item>
     <item>
       <title>Htb-Analysis</title>
-      <link>http://localhost:1313/tags/htb-analysis/</link>
+      <link>https://keruenn.github.io/tags/htb-analysis/</link>
       <pubDate>Thu, 14 Mar 2024 22:06:27 +0500</pubDate>
-      <guid>http://localhost:1313/tags/htb-analysis/</guid>
+      <guid>https://keruenn.github.io/tags/htb-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Irisctf_2024</title>
-      <link>http://localhost:1313/tags/irisctf_2024/</link>
+      <link>https://keruenn.github.io/tags/irisctf_2024/</link>
       <pubDate>Mon, 08 Jan 2024 14:02:07 +0600</pubDate>
-      <guid>http://localhost:1313/tags/irisctf_2024/</guid>
+      <guid>https://keruenn.github.io/tags/irisctf_2024/</guid>
       <description></description>
     </item>
     <item>
       <title>Htb-Fuse</title>
-      <link>http://localhost:1313/tags/htb-fuse/</link>
+      <link>https://keruenn.github.io/tags/htb-fuse/</link>
       <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
-      <guid>http://localhost:1313/tags/htb-fuse/</guid>
+      <guid>https://keruenn.github.io/tags/htb-fuse/</guid>
       <description></description>
     </item>
     <item>
       <title>Htb-Steamcloud</title>
-      <link>http://localhost:1313/tags/htb-steamcloud/</link>
+      <link>https://keruenn.github.io/tags/htb-steamcloud/</link>
       <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
-      <guid>http://localhost:1313/tags/htb-steamcloud/</guid>
+      <guid>https://keruenn.github.io/tags/htb-steamcloud/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>http://localhost:1313/tags/kubernetes/</link>
+      <link>https://keruenn.github.io/tags/kubernetes/</link>
       <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
-      <guid>http://localhost:1313/tags/kubernetes/</guid>
+      <guid>https://keruenn.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>Htb-Sau</title>
-      <link>http://localhost:1313/tags/htb-sau/</link>
+      <link>https://keruenn.github.io/tags/htb-sau/</link>
       <pubDate>Sat, 06 Jan 2024 20:55:34 +0600</pubDate>
-      <guid>http://localhost:1313/tags/htb-sau/</guid>
+      <guid>https://keruenn.github.io/tags/htb-sau/</guid>
       <description></description>
     </item>
   </channel>

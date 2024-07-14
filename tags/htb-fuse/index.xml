@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Htb-Fuse on keruen&#39;s Security Blog</title>
-    <link>http://localhost:1313/tags/htb-fuse/</link>
+    <link>https://keruenn.github.io/tags/htb-fuse/</link>
     <description>Recent content in Htb-Fuse on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Jan 2024 22:10:36 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/htb-fuse/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://keruenn.github.io/tags/htb-fuse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HackTheBox: Fuse</title>
-      <link>http://localhost:1313/posts/fuse/</link>
+      <link>https://keruenn.github.io/posts/fuse/</link>
       <pubDate>Sun, 07 Jan 2024 22:10:36 +0600</pubDate>
-      <guid>http://localhost:1313/posts/fuse/</guid>
+      <guid>https://keruenn.github.io/posts/fuse/</guid>
       <description></description>
     </item>
   </channel>

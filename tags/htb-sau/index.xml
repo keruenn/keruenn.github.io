@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Htb-Sau on keruen&#39;s Security Blog</title>
-    <link>http://localhost:1313/tags/htb-sau/</link>
+    <link>https://keruenn.github.io/tags/htb-sau/</link>
     <description>Recent content in Htb-Sau on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jan 2024 20:55:34 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/htb-sau/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://keruenn.github.io/tags/htb-sau/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HackTheBox: Sau</title>
-      <link>http://localhost:1313/posts/sau/</link>
+      <link>https://keruenn.github.io/posts/sau/</link>
       <pubDate>Sat, 06 Jan 2024 20:55:34 +0600</pubDate>
-      <guid>http://localhost:1313/posts/sau/</guid>
+      <guid>https://keruenn.github.io/posts/sau/</guid>
       <description>Content recon </description>
     </item>
   </channel>
