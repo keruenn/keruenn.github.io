@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Irisctf_2024 on keruen&#39;s Security Blog</title>
-    <link>https://keruenn.github.io/tags/irisctf_2024/</link>
+    <link>http://localhost:1313/tags/irisctf_2024/</link>
     <description>Recent content in Irisctf_2024 on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Jan 2024 14:02:07 +0600</lastBuildDate>
-    <atom:link href="https://keruenn.github.io/tags/irisctf_2024/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/irisctf_2024/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[IRIS CTF 2024] What&#39;s My Password</title>
-      <link>https://keruenn.github.io/posts/irisctf_2024_whats_my_password/</link>
+      <link>http://localhost:1313/posts/irisctf_2024_whats_my_password/</link>
       <pubDate>Mon, 08 Jan 2024 14:02:07 +0600</pubDate>
-      <guid>https://keruenn.github.io/posts/irisctf_2024_whats_my_password/</guid>
+      <guid>http://localhost:1313/posts/irisctf_2024_whats_my_password/</guid>
       <description></description>
     </item>
   </channel>

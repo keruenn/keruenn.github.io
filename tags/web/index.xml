@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on keruen&#39;s Security Blog</title>
-    <link>https://keruenn.github.io/tags/web/</link>
+    <link>http://localhost:1313/tags/web/</link>
     <description>Recent content in Web on keruen&#39;s Security Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Mar 2024 15:46:16 +0500</lastBuildDate>
-    <atom:link href="https://keruenn.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[HackTheBox CTF 2024] Labyrinth Linguist</title>
-      <link>https://keruenn.github.io/posts/htbctf_2024_labyrinth_linguist/</link>
+      <link>http://localhost:1313/posts/htbctf_2024_labyrinth_linguist/</link>
       <pubDate>Tue, 19 Mar 2024 15:46:16 +0500</pubDate>
-      <guid>https://keruenn.github.io/posts/htbctf_2024_labyrinth_linguist/</guid>
+      <guid>http://localhost:1313/posts/htbctf_2024_labyrinth_linguist/</guid>
       <description></description>
     </item>
     <item>
       <title>[HackTheBox CTF 2024] TimeKORP</title>
-      <link>https://keruenn.github.io/posts/htbctf_2024_time_korp/</link>
+      <link>http://localhost:1313/posts/htbctf_2024_time_korp/</link>
       <pubDate>Tue, 19 Mar 2024 15:15:57 +0500</pubDate>
-      <guid>https://keruenn.github.io/posts/htbctf_2024_time_korp/</guid>
+      <guid>http://localhost:1313/posts/htbctf_2024_time_korp/</guid>
       <description></description>
     </item>
     <item>
       <title>[HackTheBox CTF 2024] KORP Terminal</title>
-      <link>https://keruenn.github.io/posts/htbctf_2024_korp_terminal/</link>
+      <link>http://localhost:1313/posts/htbctf_2024_korp_terminal/</link>
       <pubDate>Tue, 19 Mar 2024 14:44:44 +0500</pubDate>
-      <guid>https://keruenn.github.io/posts/htbctf_2024_korp_terminal/</guid>
+      <guid>http://localhost:1313/posts/htbctf_2024_korp_terminal/</guid>
       <description></description>
     </item>
     <item>
       <title>[HackTheBox CTF 2024] Flag Command</title>
-      <link>https://keruenn.github.io/posts/htbctf_2024_flag_command/</link>
+      <link>http://localhost:1313/posts/htbctf_2024_flag_command/</link>
       <pubDate>Tue, 19 Mar 2024 11:43:36 +0500</pubDate>
-      <guid>https://keruenn.github.io/posts/htbctf_2024_flag_command/</guid>
+      <guid>http://localhost:1313/posts/htbctf_2024_flag_command/</guid>
       <description></description>
     </item>
     <item>
       <title>[IRIS CTF 2024] What&#39;s My Password</title>
-      <link>https://keruenn.github.io/posts/irisctf_2024_whats_my_password/</link>
+      <link>http://localhost:1313/posts/irisctf_2024_whats_my_password/</link>
       <pubDate>Mon, 08 Jan 2024 14:02:07 +0600</pubDate>
-      <guid>https://keruenn.github.io/posts/irisctf_2024_whats_my_password/</guid>
+      <guid>http://localhost:1313/posts/irisctf_2024_whats_my_password/</guid>
       <description></description>
     </item>
   </channel>
