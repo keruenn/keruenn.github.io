@@ -1,8 +1,9 @@
 baseURL = 'https://keruenn.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'security research'
 theme = 'PaperMod'
 
+# Syntax highlighting settings
 [markup]
   [markup.highlight]
     codeFences = true
@@ -10,3 +11,69 @@ theme = 'PaperMod'
     lineNos = true
     lineNumbersInTable = true
     style = "monokai"
+
+# Enable taxonomies for tags and categories
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Main menu configuration
+[menu]
+  # Posts page menu item
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 5
+  
+  # About page menu item
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  
+  # Tags page menu item  
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+
+# PaperMod theme specific settings
+[params]
+  # Enable tag display in posts
+  ShowTags = true
+  
+  # Disable post sharing
+  ShowShareButtons = false
+  
+  # Enable reading time display
+  ShowReadingTime = true
+  
+  # Disable breadcrumbs
+  ShowBreadCrumbs = false
+  
+  # Enable post navigation (next/prev)
+  ShowPostNavLinks = true
+  
+  # Disable social icons
+  socialIcons = []
+  
+  # Hide powered by footer
+  hideFooter = true
+  disableHugoGeneratorInject = true
+
+# Enable search functionality
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Search configuration
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]
