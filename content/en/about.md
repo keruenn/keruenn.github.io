@@ -25,7 +25,7 @@ empty...
 - Web Application Security
 - RedTeam
 - Ethical Hacking
-- Programming (CS)
+- Computer Science
 
 
 ## Socials

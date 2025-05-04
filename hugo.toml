@@ -1,110 +1,117 @@
+title = "security research"
 baseURL = 'https://keruenn.github.io/'
-languageCode = 'en-us'
-title = 'security research'
-theme = 'PaperMod'
 
-# Syntax highlighting settings
+# This is what goes in <html lang="">
+languageCode = 'en-us'
+
+# This defines how dates are formatted
+defaultContentLanguage = "en-us"
+
+# Enable emojis globally
+enableEmoji = true
+ignoreErrors = ["additional-script-loading-error"] # ignore error of loading additional scripts.
+
+# theme setting
+theme = "awesome"
+
+[services]
+# To enable Google Analytics 4 (gtag.js) provide G-MEASUREMENT_ID below.
+# To disable Google Analytics, simply leave the field empty or remove the next two lines
+  [services.googleAnalytics]
+    id = '' # G-MEASUREMENT_ID
+
+# To enable Disqus comments, provide Disqus Shortname below.
+# To disable Disqus comments, simply leave the field empty or remove the next two lines
+  [services.disqus]
+    shortname = ''
+
+# set markup.highlight.noClasses=false to enable code highlight
 [markup]
   [markup.highlight]
-    codeFences = true
-    guessSyntax = false
+    noClasses = false
     lineNos = true
     lineNumbersInTable = true
     style = "monokai"
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2 # ToC starts from H2
+    endLevel = 4 # ToC ends at H4
+    ordered = false # generates <ul> instead of <ol>
+
+############################## English language ################################
+[Languages.en-us]
+  languageName = "English"
+  languageCode = "en-us"
+  contentDir = "content/en"
+  weight = 1
+
+  [Languages.en-us.menu]
+  [[Languages.en-us.menu.main]]
+    pageRef="/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[Languages.en-us.menu.main]]
+    pageRef="posts"
+    name = 'Posts'
+    url = '/posts/'
+    weight = 20
+  [[Languages.en-us.menu.main]]
+    pageRef="about"
+    name = 'About'
+    url = '/about/'
+    weight = 30
+  [[Languages.en-us.menu.main]]
+    pageRef="tags"
+    name = 'Tags'
+    url = '/tags/'
+    weight = 40
+
+[Languages.en-us.params]
+  sitename = "security research"
+  defaultColor = "auto" # set color mode: dark, light, auto
+  description = "A blog about security research, CTFs, and ethical hacking"
+  mainSections = ['posts']
+  toc = true
+  tocOpen = false
+  goToTop = true
+  dateFormat = "January 2, 2006"
+  rssFeedDescription = "summary"
+
+[Languages.en-us.params.author]
+  avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
+  intro = "security research"
+  name = "keruen"
+  description = "A blog about security research, CTFs, and ethical hacking"
+
+# Allow to override webmanifest options
+[Languages.en-us.params.webmanifest]
+  name = "security research"
+  short_name = "security research"
+  start_url = "/"
+  theme_color = "#434648"
+  background_color = "#fff"
+  display = "standalone"
 
 # Enable taxonomies for tags and categories
 [taxonomies]
   tag = "tags"
   category = "categories"
 
-# Main menu configuration
-[menu]
-  # Posts page menu item
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 5
-  
-  # About page menu item
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-  
-  # Tags page menu item  
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 20
+###################################################################
 
-# PaperMod theme specific settings
-[params]
-  # Site description
-  description = "A blog about security research, CTFs, and vulnerabilities"
-  
-  # Home info section
+# Allow to override `browserconfig.xml` params (configuration for windows embedded browsers)
+[params.browserconfig]
+  TileColor = "#2d89ef" # default windows 10 blue tile color
 
-  
-  # Display settings
-  displayFullLangName = true
-  ShowReadingTime = true
-  ShowShareButtons = false
-  ShowBreadCrumbs = true
-  ShowPostNavLinks = true
-  ShowCodeCopyButtons = true
-  ShowTags = true
-  
-  # Hide generator info
-  disableHugoGeneratorInject = true
-  
-  # Content settings
-  showtoc = true
-  tocopen = false
-  hideSummary = false
-  
-  # Date format
-  DateFormat = "January 2, 2006"
-  defaultTheme = "auto"
-  
-  # Post cover settings
-  [params.cover]
-    linkFullImages = true
-    responsiveImages = true
-  
-  # Assets settings
-  [params.assets]
-    favicon = ""
-    disableHLJS = false
-  
-  # Add your social media links
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/yourusername"  # Replace with your GitHub URL
-  
-  [[params.socialIcons]]
-    name = "email"
-    url = "mailto:your.email@example.com"  # Replace with your email
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/keruenn"
 
-  # Custom footer text (optional)
-  [params.footer]
-    trademark = true
-    author = true
-    topText = []
-    bottomText = []
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:keruen@duck.com"
 
-  # Search settings
-  [params.fuseOpts]
-    isCaseSensitive = false
-    shouldSort = true
-    location = 0
-    distance = 1000
-    threshold = 0.4
-    minMatchCharLength = 0
-    keys = ["title", "permalink", "summary", "content"]
-
-# Enable search functionality
 [outputs]
   home = ["HTML", "RSS", "JSON"]

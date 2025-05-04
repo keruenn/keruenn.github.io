@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on security research</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:65460/posts/</link>
     <description>Recent content in Posts on security research</description>
-    <generator>Hugo -- 0.147.1</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 May 2025 10:07:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 May 2025 10:07:56 +0500</lastBuildDate><atom:link href="http://localhost:65460/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TCP1P Writeups</title>
-      <link>http://localhost:1313/posts/tcp1p-writeups/</link>
+      <link>http://localhost:65460/posts/tcp1p-writeups/</link>
       <pubDate>Sat, 03 May 2025 10:07:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/tcp1p-writeups/</guid>
+      
+      <guid>http://localhost:65460/posts/tcp1p-writeups/</guid>
+      
       <description>&lt;p&gt;123213&lt;/p&gt;</description>
+      
     </item>
+    
     <item>
       <title>Hello world!</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:65460/posts/my-first-post/</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      
+      <guid>http://localhost:65460/posts/my-first-post/</guid>
+      
       <description></description>
+      
     </item>
+    
   </channel>
 </rss>

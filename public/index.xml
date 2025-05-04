@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>security research</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:65460/</link>
     <description>Recent content on security research</description>
-    <generator>Hugo -- 0.147.1</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 May 2025 10:07:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 May 2025 10:07:56 +0500</lastBuildDate><atom:link href="http://localhost:65460/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TCP1P Writeups</title>
-      <link>http://localhost:1313/posts/tcp1p-writeups/</link>
+      <link>http://localhost:65460/posts/tcp1p-writeups/</link>
       <pubDate>Sat, 03 May 2025 10:07:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/tcp1p-writeups/</guid>
+      
+      <guid>http://localhost:65460/posts/tcp1p-writeups/</guid>
+      
       <description>&lt;p&gt;123213&lt;/p&gt;</description>
+      
     </item>
+    
     <item>
       <title>Hello world!</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:65460/posts/my-first-post/</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      
+      <guid>http://localhost:65460/posts/my-first-post/</guid>
+      
       <description></description>
+      
     </item>
+    
     <item>
       <title></title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:65460/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      
+      <guid>http://localhost:65460/about/</guid>
+      
       <description>&lt;h1 id=&#34;about&#34;&gt;About&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Vincit qui se vincit&lt;/p&gt;&lt;/blockquote&gt;
@@ -40,7 +49,7 @@
 &lt;li&gt;Web Application Security&lt;/li&gt;
 &lt;li&gt;RedTeam&lt;/li&gt;
 &lt;li&gt;Ethical Hacking&lt;/li&gt;
-&lt;li&gt;Programming (CS)&lt;/li&gt;
+&lt;li&gt;Computer Science&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;socials&#34;&gt;Socials&lt;/h2&gt;
 &lt;ul&gt;
@@ -48,6 +57,8 @@
 &lt;li&gt;hackerone - &lt;a href=&#34;https://hackerone.com/keruen&#34;&gt;https://hackerone.com/keruen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;bugcrowd - &lt;a href=&#34;https://bugcrowd.com/keruen&#34;&gt;https://bugcrowd.com/keruen&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+      
     </item>
+    
   </channel>
 </rss>
