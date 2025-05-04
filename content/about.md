@@ -6,17 +6,29 @@ showDescription: false
 
 # About
 
-empty...
-
+> Vincit qui se vincit
 
 
 ## Research portfolio
 
 empty...
 
-## Interests
 
-- Web application Security
-- RedTeam
+## Certifications
+
+empty...
+
+
+
+## Interests
 - CTF
+- Web Application Security
+- RedTeam
+- Ethical Hacking
 - Programming (CS)
+
+
+## Socials
+- github - https://github.com/keruenn
+- hackerone - https://hackerone.com/keruen
+- bugcrowd - https://bugcrowd.com/keruen

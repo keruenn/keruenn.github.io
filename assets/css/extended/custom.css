@@ -1,0 +1,26 @@
+blockquote {
+    font-style: italic;
+    color: #999; /* Optional: lighter color for quotes */
+  }
+  
+  blockquote p {
+    font-style: italic;
+  }
+
+  /* Make all post cards have consistent background */
+.post-entry {
+    background: var(--entry);  /* Use the same background for all posts */
+    border-radius: var(--radius);
+    margin-bottom: var(--gap);
+    padding: var(--gap);
+  }
+  
+  /* If you prefer no background for all posts */
+  .post-entry {
+    background: transparent;
+    border-radius: 0;
+    /* other styles as needed */
+  }
+
+
+  

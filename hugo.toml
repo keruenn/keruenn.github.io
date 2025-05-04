@@ -42,38 +42,69 @@ theme = 'PaperMod'
 
 # PaperMod theme specific settings
 [params]
-  # Enable tag display in posts
+  # Site description
+  description = "A blog about security research, CTFs, and vulnerabilities"
+  
+  # Home info section
+
+  
+  # Display settings
+  displayFullLangName = true
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
   ShowTags = true
   
-  # Disable post sharing
-  ShowShareButtons = false
-  
-  # Enable reading time display
-  ShowReadingTime = true
-  
-  # Disable breadcrumbs
-  ShowBreadCrumbs = false
-  
-  # Enable post navigation (next/prev)
-  ShowPostNavLinks = true
-  
-  # Disable social icons
-  socialIcons = []
-  
-  # Hide powered by footer
-  hideFooter = true
+  # Hide generator info
   disableHugoGeneratorInject = true
+  
+  # Content settings
+  showtoc = true
+  tocopen = false
+  hideSummary = false
+  
+  # Date format
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  
+  # Post cover settings
+  [params.cover]
+    linkFullImages = true
+    responsiveImages = true
+  
+  # Assets settings
+  [params.assets]
+    favicon = ""
+    disableHLJS = false
+  
+  # Add your social media links
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/yourusername"  # Replace with your GitHub URL
+  
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:your.email@example.com"  # Replace with your email
+
+  # Custom footer text (optional)
+  [params.footer]
+    trademark = true
+    author = true
+    topText = []
+    bottomText = []
+
+  # Search settings
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
 
 # Enable search functionality
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-
-# Search configuration
-[params.fuseOpts]
-  isCaseSensitive = false
-  shouldSort = true
-  location = 0
-  distance = 1000
-  threshold = 0.4
-  minMatchCharLength = 0
-  keys = ["title", "permalink", "summary", "content"]
