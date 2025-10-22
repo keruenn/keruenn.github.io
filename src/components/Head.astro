@@ -1,7 +1,6 @@
 ---
 import { SITE } from '@/consts'
 import { ClientRouter } from 'astro:transitions'
-import Favicons from './Favicons.astro'
 ---
 
 <head>
@@ -42,7 +41,6 @@ import Favicons from './Favicons.astro'
     href={new URL('rss.xml', Astro.site)}
   />
 
-  <Favicons />
   <ClientRouter />
 
   <slot />
